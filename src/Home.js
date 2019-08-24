@@ -16,17 +16,17 @@ function Home() {
 			>
 				<Heading>What is Next Act?</Heading>
 				<Paragraph>
-					Next Act is a student theatre group at the Massachusetts
-					Institute of Technology dedicated to presenting an annual
-					full-length musical production during MIT's Campus Preview
+					Next Act is a <b>student theatre group at the Massachusetts
+					Institute of Technology</b> dedicated to presenting an <b>annual
+					full-length musical production</b> during MIT's Campus Preview
 					Weekend each spring. Our members come from across campus and
 					include veterans to acting and beginners alike. Anyone who
 					auditions for an acting role is guaranteed to be cast in a
 					speaking-role, regardless of experience. We welcome students
 					to join our Stage Crew, design sets as part of our Art team,
 					play music for the Pit, and more! Our rehearsals are full of
-					fun, song, and laughter. We invite all members of the MIT
-					community to join us!
+					fun, song, and laughter. <b>We invite all members of the MIT
+					community to join us!</b>
 				</Paragraph>
 			</Box>
 			<Box

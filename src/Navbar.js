@@ -18,7 +18,6 @@ const StyledLink = styled(Link)`
 export default class Navbar extends React.Component {
 	render() {
 		return (
-			<Router>
 				<Box
 					align="center"
 					justify="between"
@@ -56,7 +55,6 @@ export default class Navbar extends React.Component {
 						<Heading level="4">Contact</Heading>
 					</StyledLink>
 				</Box>
-			</Router>
 		);
 	}
 }
