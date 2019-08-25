@@ -1,14 +1,18 @@
 import React from "react";
-import "./App.css";
+import "./css/App.css";
 import { Grommet, Box, Heading, Paragraph, ResponsiveContext } from "grommet";
 import { Switch, BrowserRouter as Router, Link, Route } from "react-router-dom";
 import MobileSidebar from "./MobileSidebar";
 
+// User navigation essentials.
 import { LinksDesktop, LinksMobile } from "./NavLinks";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Home from "./Home";
-import AboutNextAct from "./AboutNextAct";
+
+// Page imports.
+import Home from "./pages/Home";
+import AboutNextAct from "./pages/AboutNextAct";
+import CurrentSeason from './pages/CurrentSeason';
 
 const grommetTheme = {
   rounding: 12,
@@ -23,7 +27,6 @@ const grommetTheme = {
       family: "Montserrat, HelveticaNeue, Arial",
       size: "15px",
       height: "20px",
-      maxWidth: "300px"
     }
   },
   paragraph: {
@@ -31,13 +34,13 @@ const grommetTheme = {
   },
   heading: {
     font: {
-      family: "Avenir, HelveticaNeue, Roboto, Arial"
+      family: "HelveticaNeue, Roboto, Arial"
     }
   }
 };
 
 function App() {
-  const [mobileSidebarOpen, setMobileSidebar] = React.useState(false);
+  document.body.style.backgroundColor = "black";
 
   /*
   routeSwitch is what acts as different pages for the site.
@@ -53,6 +56,7 @@ function App() {
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/about" exact component={AboutNextAct} />
+      <Route path="/current" exact component={CurrentSeason} />
     </Switch>
   );
 
@@ -63,6 +67,7 @@ function App() {
         <ResponsiveContext.Consumer>
           {size => {
             if (size == "small") {
+              document.body.style.backgroundSize = 'auto';
               // Mobile size.
               return (
                 <MobileSidebar>
@@ -71,6 +76,7 @@ function App() {
                 </MobileSidebar>
               );
             } else {
+              document.body.style.backgroundSize = 'cover';
               // Desktop size.
               return (
                 // Wrap in React.Fragment

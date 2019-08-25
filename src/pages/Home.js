@@ -1,12 +1,12 @@
 import React from "react";
 import { Grommet, Box, Heading, Paragraph } from "grommet";
 import Fade from "react-reveal/Fade";
-import seussical from "./images/seussical.jpg";
+import seussical from "../images/seussical.jpg";
 
 function Home() {
 	document.body.background = seussical;
 	return (
-		<Box margin='small'>
+		<Box margin="small">
 			<Box
 				className="info-box"
 				align="center"
@@ -51,8 +51,8 @@ function Home() {
 				<Heading>Announcements</Heading>
 				<Paragraph>
 					- We are in the process of deciding our show for the S2020
-					semester. The show will be announced in November. Auditions
-					will be held at the end of January 2020. Please stay tuned.
+					semester. The show will be announced in November. <b>Auditions
+					will be held at the end of January 2020.</b> Please stay tuned.
 				</Paragraph>
 				<Paragraph>
 					- You can now make donations to Next Act! Check out the

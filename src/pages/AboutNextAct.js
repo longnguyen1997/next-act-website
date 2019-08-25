@@ -1,7 +1,7 @@
 import React from "react";
 import { Grommet, Box, Heading, Paragraph } from "grommet";
 import Fade from "react-reveal/Fade";
-import mersisters from "./images/mersisters.jpg";
+import mersisters from "../images/mersisters.jpg";
 
 function AboutNextAct() {
 	document.body.background = mersisters;
@@ -33,7 +33,7 @@ function AboutNextAct() {
 					continued the tradition of passing along the Director's Hat
 					in this manner.
 				</Paragraph>
-				<Heading level="2">The Popping of the Director's Hat</Heading>
+				<Heading level="2" textAlign='center'>The Popping of the Director's Hat</Heading>
 				<Paragraph>
 					Each performance of Next Act kicks off with the ceremonial
 					popping of the Director's Hat. At the conclusion of the
