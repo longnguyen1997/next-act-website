@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
 		return (
 			<Box
 				align="center"
-				justify="between"
+				justify="center"
 				direction="row-responsive"
 				overflow="auto"
 				pad={{ left: "large", right: "large" }}
@@ -17,8 +17,7 @@ export default class Footer extends React.Component {
 				background={{ dark: true, color: "black" }}
 				elevation="small"
 			>
-				<Heading level="4">MIT Next Act 2020</Heading>
-				<Organization />
+				<Heading level="4">© MIT Next Act 2020.</Heading>
 			</Box>
 		);
 	}
