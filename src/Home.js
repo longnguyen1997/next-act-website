@@ -11,8 +11,8 @@ function Home() {
 				className="info-box"
 				align="center"
 				justify="center"
-				pad="medium"
-				margin="small"
+				pad="large"
+				margin="xsmall"
 				alignSelf="center"
 				elevation="large"
 				width="large"
@@ -46,24 +46,18 @@ function Home() {
 				margin="xsmall"
 				alignSelf="center"
 				width="large"
-				elevation='large'
+				elevation="large"
 			>
 				<Heading>Announcements</Heading>
-				<ul>
-					{" "}
-					<li>
-						<h3>
-							We are in the process of deciding our show for the
-							S2020 semester. The show will be announced in
-							November. Auditions will be held at the end of
-							January 2020. Please stay tuned.
-						</h3>
-					</li>
-					<li>
-						You can now make donations to Next Act! Check out the
-						donation page for more information.
-					</li>
-				</ul>
+				<Paragraph>
+					- We are in the process of deciding our show for the S2020
+					semester. The show will be announced in November. Auditions
+					will be held at the end of January 2020. Please stay tuned.
+				</Paragraph>
+				<Paragraph>
+					- You can now make donations to Next Act! Check out the
+					donation page for more information.
+				</Paragraph>
 			</Box>
 		</Box>
 	);
