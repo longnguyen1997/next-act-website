@@ -6,13 +6,13 @@ import mersisters from "./images/mersisters.jpg";
 function AboutNextAct() {
 	document.body.background = mersisters;
 	return (
-		<Box>
+		<Box margin='small'>
 			<Box
 				className="info-box"
 				align="center"
 				justify="center"
-				pad="medium"
-				margin="small"
+				pad="large"
+				margin="xsmall"
 				alignSelf="center"
 				elevation="large"
 				width="large"

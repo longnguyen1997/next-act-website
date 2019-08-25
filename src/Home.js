@@ -6,7 +6,7 @@ import seussical from "./images/seussical.jpg";
 function Home() {
 	document.body.background = seussical;
 	return (
-		<Box>
+		<Box margin='small'>
 			<Box
 				className="info-box"
 				align="center"
