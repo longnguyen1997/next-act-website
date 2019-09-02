@@ -36,16 +36,17 @@
   background-color: rgba(255, 255, 255, 0.84);
 }
 
-/* LINKS */
+/* LINKS ON NAVBAR */
 
-a,
-a:focus,
-a:active {
+.navbar a,
+.navbar a:focus,
+.navbar a:active {
   color: white;
   text-decoration: none;
   transition: all 0.12s ease-in;
 }
 
-a:hover {
+/* White indicator for navbar links. */
+.navbar a:hover {
   box-shadow: inset 0 -3px 0 white;
 }

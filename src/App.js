@@ -13,6 +13,7 @@ import Footer from "./Footer";
 import Home from "./pages/Home";
 import AboutNextAct from "./pages/AboutNextAct";
 import CurrentSeason from "./pages/CurrentSeason";
+import Join from "./pages/Join";
 
 const grommetTheme = {
   rounding: 12,
@@ -57,6 +58,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/about" exact component={AboutNextAct} />
       <Route path="/current" exact component={CurrentSeason} />
+      <Route path="/join" exact component={Join} />
     </Switch>
   );
 

@@ -18,7 +18,7 @@ function AboutNextAct() {
 				width="large"
 			>
 			<Fade bottom cascade>
-				<Heading>About Next Act</Heading>
+				<Heading textAlign='center'>About Next Act</Heading>
 				<Paragraph>
 					<b>
 						Founded in the spring of 1985 by Lauren Singer '86, Next

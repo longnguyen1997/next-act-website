@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, BrowserRouter as Router } from "react-router-dom";
 import { Grommet, Box, Heading, Paragraph } from "grommet";
 import { Organization } from "grommet-icons";
+import { Fade } from "react-reveal";
 
 export default class Footer extends React.Component {
 	render() {
@@ -17,7 +18,7 @@ export default class Footer extends React.Component {
 				background={{ dark: true, color: "black" }}
 				elevation="small"
 			>
-				<Heading level="4">© MIT Next Act 2020.</Heading>
+				<Heading level="4"><Fade cascade>© MIT Next Act 2020.</Fade></Heading>
 			</Box>
 		);
 	}

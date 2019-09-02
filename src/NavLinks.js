@@ -16,16 +16,16 @@ const links = (
 		<Link to="/past">
 			<Heading level="4">Past shows</Heading>
 		</Link>
-		<Link to="/past">
+		<Link to="/join">
 			<Heading level="4">Join</Heading>
 		</Link>
-		<Link to="/past">
+		<Link to="/donate">
 			<Heading level="4">Donate</Heading>
 		</Link>
-		<Link to="/past">
+		<Link to="/faqs">
 			<Heading level="4">FAQs</Heading>
 		</Link>
-		<Link to="/past">
+		<Link to="/contact">
 			<Heading level="4">Contact</Heading>
 		</Link>
 	</React.Fragment>
