@@ -5,7 +5,7 @@ import mersisters from "../images/mersisters.jpg";
 
 function AboutNextAct() {
 	document.body.background = mersisters;
-	return (
+	return (<Fade>
 		<Box margin='small'>
 			<Box
 				className="info-box"
@@ -17,6 +17,7 @@ function AboutNextAct() {
 				elevation="large"
 				width="large"
 			>
+			<Fade bottom cascade>
 				<Heading>About Next Act</Heading>
 				<Paragraph>
 					<b>
@@ -47,9 +48,9 @@ function AboutNextAct() {
 					Vocalists and musicians perform songs, both from musical
 					theater and not. We hope you'll join us at our next one for
 					delicious food, great company, and beautiful music!
-				</Paragraph>
+				</Paragraph></Fade>
 			</Box>
-		</Box>
+		</Box></Fade>
 	);
 }
 

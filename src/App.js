@@ -12,7 +12,7 @@ import Footer from "./Footer";
 // Page imports.
 import Home from "./pages/Home";
 import AboutNextAct from "./pages/AboutNextAct";
-import CurrentSeason from './pages/CurrentSeason';
+import CurrentSeason from "./pages/CurrentSeason";
 
 const grommetTheme = {
   rounding: 12,
@@ -26,7 +26,7 @@ const grommetTheme = {
     font: {
       family: "Montserrat, HelveticaNeue, Arial",
       size: "15px",
-      height: "20px",
+      height: "20px"
     }
   },
   paragraph: {
@@ -65,9 +65,9 @@ function App() {
       <Router>
         {/* Grommet context for rendering the navbar or sidebar.*/}
         <ResponsiveContext.Consumer>
-          {size => {
-            if (size == "small") {
-              document.body.style.backgroundSize = 'auto';
+          {screenSize => {
+            if (screenSize == "small") {
+              document.body.style.backgroundSize = "auto";
               // Mobile size.
               return (
                 <MobileSidebar>
@@ -76,7 +76,7 @@ function App() {
                 </MobileSidebar>
               );
             } else {
-              document.body.style.backgroundSize = 'cover';
+              document.body.style.backgroundSize = "cover";
               // Desktop size.
               return (
                 // Wrap in React.Fragment

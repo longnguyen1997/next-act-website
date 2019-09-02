@@ -6,6 +6,7 @@ import seussical from "../images/seussical.jpg";
 function Home() {
 	document.body.background = seussical;
 	return (
+		<Fade>
 		<Box margin="small">
 			<Box
 				className="info-box"
@@ -16,7 +17,7 @@ function Home() {
 				alignSelf="center"
 				elevation="large"
 				width="large"
-			>
+			><Fade bottom cascade>
 				<Heading>What is Next Act?</Heading>
 				<Paragraph>
 					Next Act is a{" "}
@@ -36,7 +37,7 @@ function Home() {
 					<b>
 						We invite all members of the MIT community to join us!
 					</b>
-				</Paragraph>
+				</Paragraph></Fade>
 			</Box>
 			<Box
 				className="info-box"
@@ -47,7 +48,7 @@ function Home() {
 				alignSelf="center"
 				width="large"
 				elevation="large"
-			>
+			><Fade bottom cascade>
 				<Heading>Announcements</Heading>
 				<Paragraph>
 					- We are in the process of deciding our show for the S2020
@@ -57,9 +58,9 @@ function Home() {
 				<Paragraph>
 					- You can now make donations to Next Act! Check out the
 					donation page for more information.
-				</Paragraph>
+				</Paragraph></Fade>
 			</Box>
-		</Box>
+		</Box></Fade>
 	);
 }
 
